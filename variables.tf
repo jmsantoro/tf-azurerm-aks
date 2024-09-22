@@ -13,6 +13,12 @@ variable "resource_group_name_prefix" {
 variable "node_count" {
   type        = number
   description = "The initial quantity of nodes for the node pool."
+  default     = 1
+}
+
+variable "max_node_count" {
+  type        = number
+  description = "The max quantity of nodes for the node pool."
   default     = 3
 }
 

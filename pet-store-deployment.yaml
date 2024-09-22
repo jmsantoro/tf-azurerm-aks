@@ -223,5 +223,4 @@ spec:
     targetPort: 8080
   selector:
     app: store-front
-  type: LoadBalancer
-  reasourceGroup: rg-oriented-pangolin
+  type: ClusterIP

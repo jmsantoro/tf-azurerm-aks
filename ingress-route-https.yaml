@@ -1,0 +1,24 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: IngressRouteTCP
+metadata:
+  name: store-front
+  namespace: default
+  annotations: # If you are using local certs and not lets Encrypt - Remove this
+    kubernetes.io/ingress.class: traefik  # If you are using local certs and not lets Encrypt - Remove this
+
+spec:
+  entryPoints: 
+    - websecure
+  tls:
+    secretName: 51.8.35.178.nip.io-tls # Lets Encrypt Generated Cert from 004-lets-encrypt-cert.yaml - Change this to local cert if you don't want to use Lets Encrypt.
+    domains:
+    - main: 51.8.35.178.nip.io
+      sans:
+      - 51.8.35.178.nip.io
+
+  routes:
+  - match: Host(`51.8.35.178.nip.io`) 
+    kind: Rule
+    services:
+    - name: store-front
+      port: 80

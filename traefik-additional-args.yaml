@@ -1,0 +1,5 @@
+additionalArguments:
+  - --api.insecure=true
+  - --providers.kubernetesIngress
+  - --serversTransport.insecureSkipVerify
+  - --log.level=INFO

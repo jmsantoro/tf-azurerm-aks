@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: 51.8.35.178.nip.io # This should be your domain name
+  namespace: default
+spec:
+  secretName: 51.8.35.178.nip.io-tls # This will be your cert name in Kubernetes
+  issuerRef:
+    name: pet-store-cert # This should match from 003-lets-encrypt.yaml
+    kind: ClusterIssuer
+  commonName: 51.8.35.178.nip.io # This is the main DNS name for the cert
+  dnsNames:
+  - 51.8.35.178.nip.io # You can add subdomains if you wish
