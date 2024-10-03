@@ -130,6 +130,7 @@ spec:
 ```
 
 ### Navigate to the Website
+In a browser, enter http://<EXTERNAL_IP>.nip.io
 
 ![Pet Store Page](/images/pet-store.png)
 
