@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: 20.242.205.140.nip.io
+  - host: 20.75.229.208.nip.io
     http:
       paths:
       - path: /

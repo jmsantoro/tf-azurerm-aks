@@ -10,14 +10,14 @@ spec:
   entryPoints: 
     - websecure
   tls:
-    secretName: 51.8.35.178.nip.io-tls # Lets Encrypt Generated Cert from 004-lets-encrypt-cert.yaml - Change this to local cert if you don't want to use Lets Encrypt.
+    secretName: 20.75.229.208.nip.io-tls # Lets Encrypt Generated Cert from 004-lets-encrypt-cert.yaml - Change this to local cert if you don't want to use Lets Encrypt.
     domains:
-    - main: 51.8.35.178.nip.io
+    - main: 20.75.229.208.nip.io
       sans:
-      - 51.8.35.178.nip.io
+      - 20.75.229.208.nip.io
 
   routes:
-  - match: Host(`51.8.35.178.nip.io`) 
+  - match: Host(`20.75.229.208.nip.io`) 
     kind: Rule
     services:
     - name: store-front
