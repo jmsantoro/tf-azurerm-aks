@@ -134,7 +134,7 @@ In a browser, enter http://<EXTERNAL_IP>.nip.io
 
 ![Pet Store Page](/images/pet-store.png)
 
-### Teardown
+## Teardown
 Generate the plan
 ```
 $ terraform plan -destroy -out petstore.destroy.tfplan
