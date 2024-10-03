@@ -23,7 +23,7 @@ $ az account set --subscription <subscription_id>
 az account set --subscription-name <subscription_name>
 
 ```
-
+### Terraform
 
 ```
 # Run terraform init to initialize the Terraform deployment. This command downloads the Azure provider required to manage your Azure resources. 
