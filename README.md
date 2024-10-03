@@ -68,7 +68,8 @@ $ kubectl get nodes
 ```
 
 ### Helm Install Traefik
-> [!NOTE] You need to have the traefik repo registered in your helm config.
+> [!NOTE]
+> You need to have the traefik repo registered in your helm config.
 > To list you helm repos:
 > ```
 > $ helm repo list
