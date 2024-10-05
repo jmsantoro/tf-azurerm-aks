@@ -1,3 +1,7 @@
+service:
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+
 additionalArguments:
   - --api.insecure=true
   - --providers.kubernetesIngress
