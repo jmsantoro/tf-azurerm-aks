@@ -50,3 +50,15 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     dns_service_ip    = "10.0.4.10"
   }
 }
+
+resource "azurerm_role_assignment" "clusterClusterNetworkContributor" {
+  principal_id         = azurerm_kubernetes_cluster.k8s.identity[0].principal_id
+  scope                = azurerm_virtual_network.aks_vnet.id
+  role_definition_name = "Network Contributor"
+}
+
+resource "azurerm_role_assignment" "clusterClusterSubnetNetworkContributor" {
+  principal_id         = azurerm_kubernetes_cluster.k8s.identity[0].principal_id
+  scope                = azurerm_subnet.name.id
+  role_definition_name = "Network Contributor"
+}

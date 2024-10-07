@@ -21,6 +21,10 @@ output "cluster_ca_certificate" {
   sensitive = true
 }
 
+output "cluster_principal_id" {
+  value = azurerm_kubernetes_cluster.k8s.identity[0].principal_id
+}
+
 output "cluster_password" {
   value     = azurerm_kubernetes_cluster.k8s.kube_config[0].password
   sensitive = true
