@@ -11,17 +11,18 @@ $ az login
 
 # Confirm you are in the desired Subscription
 $ az account show
+```
 
-# Use the following commands to set the Subscription if not already selected
-
+> Use the following commands to set the Subscription if you have 
+> multiple subscriptions, and the desired subscription if not already selected.
+```
 # To get a list of all subscriptions
 $ az account list
 
 # To set the Subscription context
 $ az account set --subscription <subscription_id>
 # or
-az account set --subscription <subscription_name>
-
+$ az account set --subscription <subscription_name>
 ```
 ### Terraform
 
