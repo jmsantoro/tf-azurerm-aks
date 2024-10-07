@@ -20,7 +20,7 @@ $ az account list
 # To set the Subscription context
 $ az account set --subscription <subscription_id>
 # or
-az account set --subscription-name <subscription_name>
+az account set --subscription <subscription_name>
 
 ```
 ### Terraform
