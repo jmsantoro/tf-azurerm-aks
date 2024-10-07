@@ -93,6 +93,12 @@ $ helm install traefik traefik/traefik -f traefik-additional-args.yaml
 ![traefik load balancer public ip](/images/traefik-public-ip.png)
 
 ### Deploy the Application
+The application is a Microsft Pet Store sample application consisting of the following components:
+ - Store front: Web application for customers to view products and place orders.
+ - Product service: Shows product information.
+ - Order service: Places orders.
+ - Rabbit MQ: Message queue for an order queue.
+
 ```
 $ kubectl apply -f pet-store-deployment.yaml
 ```
