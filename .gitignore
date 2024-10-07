@@ -38,4 +38,4 @@ override.tf.json
 terraform.rc
 
 # Ignore transient Azure K8s kubeconfig
-.azurek8s
+*azurek8s
